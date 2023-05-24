@@ -1,0 +1,15 @@
+<div style="height: 300px; border: 1px solid #eee">
+  <as-split [useTransition]="true" unit="percent" [gutterSize]="10">
+    <as-split-area [size]="40" [order]="1" [visible]="keepLeft">
+      <p>Some Data Sidenav</p>
+    </as-split-area>
+    <as-split-area [size]="40" [order]="2" [visible]="true">
+      <button
+        mat-button
+        class="collapse-btn"
+        (click)="keepLeft=!keepLeft"
+      ></button>
+      Some Content
+    </as-split-area>
+  </as-split>
+</div>
